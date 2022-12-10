@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakeminer's Flsh Cards</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="/eel.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <details class="bgwrap faq">
+            <summary class="faq__title">Как пользоваться Fakeminer's Flash Cards?</summary>
+            <p class="faq__block">
+                <span></span> Создайте свою первую категорию с любым именем
+            </p>
+            <p class="faq__block">
+                Добавьте несколько карточек, состоящих из ответов и вопросов в вашу категорию
+            </p>
+            <p class="faq__block">
+                Чтобы вспомнить тему, выберите опцию теста, нажмите "Продолжить" и мысленно ответьте на вопрос. Продолжайте, пока не начнете отвечать верно на каждый вопрос.
+            </p>
+            <p class="faq__block">
+                Регулярно добавляйте и повторяйте вопросы по категориям
+            </p>
+        </details>
+
+        <div class="bgwrap flsh-cards">
+            <select class="category" id="category">
+                <option value="" disabled selected>Выберите категорию...</option>    
+            </select>
+    
+            <details class="new-category spoiler">
+                <summary class="spoiler__title">Новая категория</summary>
+                
+                <div class="new" id="new">
+                    <input class="new__field" id="new-category-name" placeholder="Название новой категории">
+                </div>
+                <button class="add" id="add-category">Создать</button>
+            </details>
+            <details class="test spoiler">
+                <summary class="spoiler__title">Тест по категории</summary>
+    
+                <button id="continue" class="continue">Продолжить</button>
+    
+                <div class="card" id="card">
+                    <div class="card__field" id="question">Вопрос</div>
+                    <div class="card__field" id="answer">Ответ</div>
+                </div>
+            </details>
+            <details class="new-card spoiler">
+                <summary class="spoiler__title">Создать новую карточку</summary>
+                <div class="new" id="new">
+                    <input class="new__field" id="new-question" placeholder="Вопрос">
+                    <input class="new__field" id="new-answer" placeholder="Ответ">
+                </div>
+                <button class="add" id="add">Создать</button>
+            </details>
+        </div>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
